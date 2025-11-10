@@ -1,6 +1,6 @@
 ---
 icon: lucide/rocket
-title: Home
+title: Index
 ---
 
 # Hello
