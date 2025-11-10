@@ -1,6 +1,9 @@
 ---
 icon: lucide/rocket
+title: Home
 ---
+
+# Hello
 
 👋 I'm Marcus. 
 
