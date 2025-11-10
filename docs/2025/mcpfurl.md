@@ -3,9 +3,6 @@ date: 2025-11-10
 icon: lucide/bot
 title: Building mcpfurl
 description: mcpfurl is an MCP Web Scraper in Go (with ChromeDriver and Selenium)
-hide:
-    - toc
-
 ---
 
 # Building mcpfurl
@@ -278,7 +275,7 @@ In CLI mode, `mcpfurl fetch-img` simply writes `resource.Body` to disk; in MCP m
 
 ## Security
 
-To make the MCP HTTP-streaming server a bit more secure, I added a simple bearer-token authentication mechanism. At the moment there's a single optional `MCPFURL_MASTERKEY`. If that variable is set and the incoming request includes the same value in the `Authorization` header, the request is allowed. In practice, I'm currently running without `MCPFURL_MASTERKEY` behind a LiteLLM proxy, which handles authorization for me.
+To make the MCP HTTP-streaming server a bit more secure, I added a simple bearer-token authentication mechanism. At the moment there's a single optional `MCPFURL_MASTERKEY`. If that variable is set and the incoming request includes the same value in the `Authorization` header, the request is allowed. In practice, I'm currently running without `MCPFURL_MASTERKEY` behind an [LiteLLM](https://www.litellm.ai/) proxy, which handles authorization for me.
 
 I'm planning to add support for additional delegate client keys in the future.
 
