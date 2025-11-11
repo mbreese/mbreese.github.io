@@ -79,7 +79,7 @@ features = [
     # Turn on this feature to expand all collapsible sections in the
     # navigation sidebar by default.
     # https://zensical.org/docs/setup/navigation/#navigation-expansion
-    "navigation.expand",
+    #"navigation.expand",
 
     # This feature turns on navigation elements in the footer that allow the
     # user to navigate to a next or previous page.
@@ -156,7 +156,7 @@ features = [
     # When navigation integration for the table of contents is enabled, it is
     # always rendered as part of the navigation sidebar on the left.
     # https://zensical.org/docs/setup/navigation/#navigation-integration
-    #"toc.integrate"
+    "toc.integrate"
 ]
 
 # ----------------------------------------------------------------------------
@@ -185,8 +185,8 @@ icon = "fontawesome/brands/github"
 link = "https://github.com/mbreese"
 
 
-[project.markdown_extensions.toc]
-toc_depth = 0
+#[project.markdown_extensions.toc]
+#toc_depth = 0
 
 [project.markdown_extensions.attr_list]
 [project.markdown_extensions.pymdownx.emoji]

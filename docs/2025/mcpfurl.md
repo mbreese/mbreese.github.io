@@ -279,6 +279,10 @@ To make the MCP HTTP-streaming server a bit more secure, I added a simple bearer
 
 I'm planning to add support for additional delegate client keys in the future.
 
+### Allow/deny URLs
+
+In the MCP servers, you can also specify allow/deny globs to match specific web URLs. For example: `allow=[https://*.wikipedia.org/*]`. This can be set in the `config.toml` file or as a command line argument to `mcp-fetch`. For examples, see the `config.toml.default` file. This check takes place for each fetch or fetch-image request.
+
 ## Summary
 To make testing easier, I wired everything up as CLI commands first and exposed the MCP tools later. That workflow let me iterate quickly without exercising the entire MCP stack on every change.
 
@@ -304,7 +308,6 @@ Ultimately, I think the foundation is solid: fetch anything, summarize it cleanl
 - Swap in additional search engines
 - Add parallel fetchers for higher throughput
 - Improve API-token security
-- Enforce URL allow/deny lists
 
 ### Repository
 
