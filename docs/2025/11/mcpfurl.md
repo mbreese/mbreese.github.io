@@ -6,7 +6,9 @@ description: mcpfurl is an MCP Web Scraper in Go (with ChromeDriver and Selenium
 ---
 
 # Building mcpfurl
-> *mcpfurl is an MCP Web Scraper written in Go (with ChromeDriver and Selenium)*
+
+!!! note ""
+    *mcpfurl is an MCP Web Scraper written in Go (with ChromeDriver and Selenium)*
 
 ## Introduction
 

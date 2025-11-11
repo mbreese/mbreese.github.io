@@ -22,4 +22,4 @@ so many of my tools are related to job orchestration.
 Here is where I'll start documenting my work more publicly.
 
 ## Recent posts  
-* [Building MCPFurl](2025/mcpfurl/) - Building a web fetching MCP server in Go 
+* [Building MCPFurl](2025/11/mcpfurl/) - Building a web fetching MCP server in Go 
