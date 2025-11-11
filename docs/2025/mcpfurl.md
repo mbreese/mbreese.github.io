@@ -10,7 +10,7 @@ description: mcpfurl is an MCP Web Scraper in Go (with ChromeDriver and Selenium
 
 ## Introduction
 
-I'm building an LLM chatbot for a specific project. To do this, I need to feed the project's documentation site into an LLM for context (a lightweight RAG workflow). The chatbot's job is to explain how to use the project, the database behind it, and what information is available. I've already created a few MCP tools (with Python's FastAPI-MCP) to expose the database's metadata, but I wasn't able to fully leverage the documentation site.
+I'm building an LLM chatbot for a specific project. The chatbot's job is to explain how to use the project, the database behind it, and what information is available. To do this, I need to feed the project's documentation site into an LLM for context (a lightweight RAG workflow). I've already created a few MCP tools (with Python's FastAPI-MCP) to expose the database's metadata, but I wasn't able to fully leverage the documentation site.
 
 ## Why the detour?
 
