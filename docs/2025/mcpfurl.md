@@ -176,7 +176,7 @@ Finally, we can extract some information about the page: title, final URL, and i
 
 I use the `Title`, `CurrentURL`, and `TargetURL` values in the YAML front matter so downstream MCP clients get helpful context about URLs and titles without parsing the body.
 
-## Search the Web Reliably
+## Search the Web reliably
 
 With that part done, I wanted to add support for quick web searches. For this, I leaned on Google's Custom Search API to avoid building yet another scraper. A thin wrapper turns queries into JSON results, and an optional SQLite cache keeps me from burning API quota on repeat questions.
 
@@ -225,7 +225,7 @@ The searcher itself is little more than a strongly typed HTTP client I can point
 
 Finally, I added an SQLite cache layer (compiled with CGO) to keep track of search results. I expect limited search traffic, and I want to minimize costs as much as possible.
 
-## Strech Goal: Download Binary Assets
+## Stretch Goal: Download Binary resources
 
 Sometimes the model may need an image or PDF referenced in the page. The download path streams the resource with configurable byte limits, enforces status-code checks, and hands back filename, content type, and base64 data.
 
